@@ -98,7 +98,7 @@ end
 
 ### Large image
 
-![Branching](/images/tubiao.png)
+![Branching](./images/tubiao.png)
 
 
 ### Definition lists can be used with HTML syntax.
