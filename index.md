@@ -1,6 +1,6 @@
 ---
 layout: default
-title: likeflames's website
+title: "likeflames's website"
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
