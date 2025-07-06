@@ -1,7 +1,7 @@
 ---
 layout: default
 title: test page
-discription: example words
+description: example words
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
