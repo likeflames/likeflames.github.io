@@ -19,15 +19,38 @@
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <!-- 添加导航栏 -->
     <nav class="navbar" role="navigation">
-      <ul class="navbar-menu">
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/another-page/' | relative_url }}">Another page</a></li>
-        <li><a href="{{ '/example/' | relative_url }}">Example</a></li>
-        <li><a href="{{ '/Blog/' | relative_url }}">Blog</a></li>
+  <ul class="navbar-menu">
+    <!-- 主导航项1 -->
+    <li class="nav-item">
+      <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
+    </li>
+    
+    <!-- 主导航项2，带下拉菜单 -->
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
+      <ul class="dropdown-menu">
+        <li><a href="{{ '/about-me' | relative_url }}" class="dropdown-item">About Me</a></li>
+        <li><a href="{{ '/team' | relative_url }}" class="dropdown-item">Our Team</a></li>
+      </ul>
+    </li>
+    
+    <!-- 主导航项3，带下拉菜单 -->
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+      <ul class="dropdown-menu">
+        <li><a href="{{ '/web-development' | relative_url }}" class="dropdown-item">Web Development</a></li>
+        <li><a href="{{ '/seo' | relative_url }}" class="dropdown-item">SEO Services</a></li>
+      </ul>
+    </li>
+    
+    <!-- 主导航项4 -->
+    <li class="nav-item">
+      <a href="{{ '/contact' | relative_url }}" class="nav-link">Contact</a>
+        </li>
       </ul>
     </nav>
+
     
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
